@@ -1,0 +1,98 @@
+/* Enter Your Custom CSS Here */
+.table_site {
+    border-collapse: collapse;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .table_site th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    background-color: #CCFFFF !important;
+    border: 1px solid #ddd !important;
+    padding: 5px;
+  }
+  .table_site td { 
+    text-align: left !important;
+    vertical-align: middle !important;
+    border-bottom: 0px !important;
+    border: 1px solid #ddd !important;
+    padding: 5px;
+  }
+  @media screen and (max-width:480px){
+    .table_site th {
+      text-align: center !important;
+      vertical-align: middle !important;
+      background-color: #CCFFFF !important;
+      border: 1px solid #ddd !important;
+      padding: 3px;
+    }
+    .table_site td { 
+      text-align: left !important;
+      vertical-align: middle !important;
+      border-bottom: 0px !important;
+      border: 1px solid #ddd !important;
+      padding: 3px;
+    }
+  }
+  
+  /* ツール用 */
+  .spr_first_contents {
+    margin-bottom: 8px;
+  }
+  .multi_row_top {
+    border-bottom: 0px !important;
+  }
+  .multi_row_middle {
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+  }
+  .multi_row_bottom {
+    border-top: 0px !important;
+  }
+  .spr_weapon {
+    color: black !important;
+    text-align: center !important;
+    border-left: 0px !important;
+  }
+  .spr_contents_title {
+    color: #ff6600 !important;
+  }
+  .spr_title_icon {
+    color: #ff6600 !important;
+    font-size: 16px !important;
+  }
+  .spr_table_center_middle th{
+    text-align: center !important;
+    vertical-align: middle !important;
+    background-color: #afeeee !important;
+  }
+  .spr_table_center_middle td{
+    text-align: left !important;
+    vertical-align: middle !important;
+    border-bottom: 0px !important;
+  }
+  .spr_select_button {
+    text-align: center !important;
+  }
+  .spr_select_button button{
+    width: 100% !important;
+  }
+  .spr_contents_hide {
+    display: none;
+  }
+  .spr_weapon_information_hide {
+    display: none;
+  }
+  .margin_bottom20 {
+    margin-bottom: 20px !important;
+  }
+  .selected_main_weapon {
+    width: 40% !important;
+  }
+  .selected_sub_weapon {
+    width: 30% !important;
+  }
+  .selected_special_weapon {
+    width: 30% !important;
+  }

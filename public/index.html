@@ -1,0 +1,1016 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>スプラトゥーン2 ウェポンランダムセレクター</title>
+    <meta name="description" content="説明文">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- End jQuery -->
+    <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- End bootstrap -->
+    <!-- cookie.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <!-- End cookie.js -->
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+</head>
+<body>
+    <!--------------------- 最初に ------------------->
+    <div id="first-title">
+        <h2 class="contents-topics-title">
+
+            <span class="spr_contents_title">最初に</span>
+            <span id="first-icon" class="glyphicon glyphicon-triangle-bottom spr_title_icon"></span>
+        </h2>
+    </div>
+
+    <div id="first-contents" class="spr_contents_hide spr_first_contents">
+        <div>
+            当ツールは『スプラトゥーン2』のメインウェポンをランダム選択するツールです。<br>
+            ヒーローシリーズなど追加されていない武器がありますが、随時追加していきますので全武器追加までしばらくお待ち下さい。<br>
+            また、アップデートによる武器追加は週末までに対応します。
+        </div>
+    </div>
+    <!---------------------   END  ----------------------->
+    <!--------------------- 使用方法 ---------------------->
+    <div id="howto-title">
+        <h2 class="contents-topics-title">
+
+            <span class="spr_contents_title">使用方法</span>
+            <span id="howto-icon" class="glyphicon glyphicon-triangle-bottom spr_title_icon"></span>
+        </h2>
+    </div>
+
+    <div id="howto-contents" class="spr_contents_hide">
+        <ol>
+        <li>各ウェポン名の表示されたボタンを押し、選択対象に入れるウェポンを有効 (緑) 、対象外にしたいウェポンを無効 (白) にする</li>
+        <li>候補ウェポン選択後、『選択』ボタン (橙) を押す</li>
+        <li>続けて選択する場合、再度『選択』ボタンを押す</li>
+        </ol>
+    </div>
+    <!---------------------   END  ----------------------->
+    <!--------------------- ウェポンセットの利用方法 ---------------------->
+    <div id="set-title">
+        <h2 class="contents-topics-title">
+
+            <span class="spr_contents_title">ウェポンセットの利用方法</span>
+            <span id="set-icon" class="glyphicon glyphicon-triangle-bottom spr_title_icon"></span>
+        </h2>
+    </div>
+
+    <div id="set-contents" class="spr_contents_hide">
+        <h3>保存方法</h3>
+        <ol>
+            <li>各ウェポン名の表示されたボタンを押し、登録選択対象に入れるウェポンを有効 (緑) 、対象外にしたいウェポンを無効 (白) にする</li>
+            <li>候補ウェポン選択後、『選択したウェポンを保存する』ボタン (紺) を押す</li>
+        </ol>
+        <h3>読み込み方法</h3>
+        <ol>
+            <li>『保存したウェポンを読み込む』ボタン（水）を押す</li>
+        </ol>
+    </div>
+    <!---------------------   END  ----------------------->
+    <!---------------------- 注意事項 --------------------->
+    <div id="note-title">
+        <h2 class="contents-topics-title">
+
+            <span class="spr_contents_title">注意事項</span>
+            <span id="note-icon" class="glyphicon glyphicon-triangle-bottom spr_title_icon"></span>
+        </h2>
+    </div>
+
+    <div id="note-contents" class="spr_contents_hide">
+        <ol>
+            <li>本ツールはJavaScript及びCookieを使用しています。設定で無効にしている場合は正常に動作しません</li>
+        <li>ご利用端末によってはデザインが崩れることがあります</li>
+        <li>本ツールを使用したことで、利用者または第三者に生じた問題について一切その責任を負いません</li>
+        <li>本ツールに何らかのバグがあった場合、問題次第では気が向いたら対処します</li>
+        <li>あとは常識の範囲内で正しくご利用ください</li>
+        </ol>
+    </div>
+    <!---------------------   END  ----------------------->
+    <!--------------------- 更新履歴 ---------------------->
+    <div id="history-title">
+        <h2 class="contents-topics-title">
+
+            <span class="spr_contents_title">更新履歴</span>
+            <span id="history-icon" class="glyphicon glyphicon-triangle-bottom spr_title_icon"></span>
+        </h2>
+    </div>
+
+    <div id="history-contents" class="spr_contents_hide">
+        <table class="table table-bordered table-condensed spr_table_center_middle">
+            <thead>
+                <tr>
+                    <th nowrap="nowrap">バージョン</th>
+                    <th>更新日</th>
+                    <th>更新内容</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!----- 1.7.7 ------>
+                <tr>
+                    <td style="border-bottom: 1px solid #ddd !important;">1.7</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">2017/10/14</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">
+                        14式竹筒銃・甲 追加<br>
+                        リッター4Kカスタム 追加<br>
+                        4Kスコープカスタム 追加
+            </td>
+                </tr>
+                <!----- 1.6.6 ------>
+                <tr>
+                    <td style="border-bottom: 1px solid #ddd !important;">1.6</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">2017/10/01</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">キャンピングシェルター 追加</td>
+                </tr>
+                <!----- 1.5.5 ------>
+                <tr>
+                    <td style="border-bottom: 1px solid #ddd !important;">1.5</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">2017/09/24</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">Rブラスターエリート 追加</td>
+                </tr>
+                <!----- 1.4.4 ------>
+                <tr>
+                    <td style="border-bottom: 1px solid #ddd !important;">1.4</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">2017/09/20</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">バレルスピナーデコ 追加</td>
+                </tr>
+                <!----- 1.3.3 ------>
+                <tr>
+                    <td style="border-bottom: 1px solid #ddd !important;">1.3</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">2017/09/10</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">もみじシューター 追加</td>
+                </tr>
+                <!----- 1.2.2 ------>
+                <tr>
+                    <td style="border-bottom: 1px solid #ddd !important;">1.2</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">2017/09/03</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">プライムシューターコラボ 追加</td>
+                </tr>
+                <!----- 1.1.1 ------>
+                <tr>
+                    <td style="border-bottom: 1px solid #ddd !important;">1.1</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">2017/08/27</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">スクリュースロッシャー 追加</td>
+                </tr>
+                <!----- 1.0.0 ------>
+                <tr>
+                    <td style="border-bottom: 1px solid #ddd !important;">1.0</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">2017/08/20</td>
+                    <td style="border-bottom: 1px solid #ddd !important;">公開</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!---------------------   END  ----------------------->
+    <!--------------------- 更新予定 ---------------------->
+    <div id="update-title">
+        <h2 class="contents-topics-title">
+
+            <span class="spr_contents_title">アップデート予定</span>
+            <span id="update-icon" class="glyphicon glyphicon-triangle-bottom spr_title_icon"></span>
+        </h2>
+    </div>
+
+    <div id="update-contents" class="spr_contents_hide">
+        <ol>
+            <li>ヒーローシリーズの追加</li>
+            <li>追加武器の追加</li>
+            <li>Androidアプリ版作成</li>
+        </ol>
+    </div>
+    <!---------------------   END  ----------------------->
+    <!---------------------- ツール ----------------------->
+    <div id="tool-title">
+        <h2 class="contents-topics-title">
+
+            <span class="spr_contents_title">ランダムセレクター</span>
+        </h2>
+    </div>
+    <!-- テンプレート
+    <div class="btn-group">
+
+        <button id="" class="btn btn-default" type="button" value="-1">　</button>
+    </div>
+    -->
+    <div id="tool-contents">
+        <div class="margin_bottom20">
+            <h3 class="spr_weapon">シューター</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+
+                    <button id="all-s" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-s" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="s-wakaba" class="btn btn-default" type="button" value="0" data-contents="わかばシューター/スプラッシュボム/インクアーマー">わかばシューター</button>
+                </div>
+                <div class="btn-group">
+                    <button id="s-momiji" class="btn btn-default" type="button" value="0" data-contents="もみじシューター/ロボットボム/アメフラシ">もみじシューター</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="s-spr" class="btn btn-default" type="button" value="0" data-contents="スプラシューター/クイックボム/スーパーチャクチ">スプラシューター</button>
+                </div>
+                <div class="btn-group">
+                    <button id="s-spr-c" class="btn btn-default" type="button" value="0" data-contents="スプラシューターコラボ/スプラッシュボム/ジェットパック">スプラシューターコラボ</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="s-rg" class="btn btn-default" type="button" value="0" data-contents="プロモデラー RG/スプリンクラー/イカスフィア">プロモデラー RG</button>
+                </div>
+                <div class="btn-group">
+                    <button id="s-mg" class="btn btn-default" type="button" value="0" data-contents="プロモデラー MG/キューバンボム/カーリングボムピッチャー">プロモデラー MG</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="s-gallon52" class="btn btn-default" type="button" value="0" data-contents=".52ガロン/ポイントセンサー/イカスフィア">.52ガロン</button>
+                </div>
+                <div class="btn-group">
+                    <button id="s-gallon96" class="btn btn-default" type="button" value="0" data-contents=".96ガロン/スプリンクラー/インクアーマー">.96ガロン</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="s-prime" class="btn btn-default" type="button" value="0" data-contents="プライムシューター/ポイントセンサー/アメフラシ">プライムシューター</button>
+                </div>
+                <div class="btn-group">
+                    <button id="s-prime-c" class="btn btn-default" type="button" value="0" data-contents="プライムシューターコラボ/キューバンボム/バブルランチャー">プライムシューターコラボ</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="s-jet" class="btn btn-default" type="button" value="0" data-contents="ジェットスイーパー/ポイズンミスト/マルチミサイル">ジェットスイーパー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="s-nzap85" class="btn btn-default" type="button" value="0" data-contents="N-ZAP85/キューバンボム/インクアーマー">N-ZAP85</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="s-l3" class="btn btn-default" type="button" value="0" data-contents="L3リールガン/カーリングボム/イカスフィア">L3リールガン</button>
+                </div>
+                <div class="btn-group">
+                    <button id="s-h3" class="btn btn-default" type="button" value="0" data-contents="H3リールガン/ポイントセンサー/スマルチミサイル">H3リールガン</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="s-sharp" class="btn btn-default" type="button" value="0" data-contents="シャープマーカー/ポイズンミスト/ジェットパック">シャープマーカー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="s-bold" class="btn btn-default" type="button" value="0" data-contents="ボールドマーカー/カーリングボム/スーパーチャクチ">ボールドマーカー</button>
+                </div>
+            </div>
+            <!-- シューター END -->
+            <br />
+            <!-- ブラスター -->
+            <h3 class="spr_weapon">ブラスター</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="all-b" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-b" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="b-hot" class="btn btn-default" type="button" value="0" data-contents="ホットブラスター/ポイズンミスト/スーパーチャクチ">ホットブラスター</button>
+                </div>
+                <div class="btn-group">
+                    <button id="b-hot-c" class="btn btn-default" type="button" value="0" data-contents="ホットブラスターカスタム/ロボットボム/ジェットパック">ホットブラスターカスタム</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="b-rapid" class="btn btn-default" type="button" value="0" data-contents="ラピッドブラスター/トラップ/スプラッシュボムピッチャー">ラピッドブラスター</button>
+                </div>
+                <div class="btn-group">
+                    <button id="b-rapid-e" class="btn btn-default" type="button" value="0" data-contents="Rブラスターエリート/ポイズンミスト/アメフラシ">Rブラスターエリート</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="b-nova" class="btn btn-default" type="button" value="0" data-contents="ノヴァブラスター/スプラッシュボム/イカスフィア">ノヴァブラスター</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="b-crash" class="btn btn-default" type="button" value="0" data-contents="クラッシュブラスター/スプラッシュボム/ハイパープレッサー">クラッシュブラスター</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <!-- ブラスター END -->
+            <br />
+            <!-- マニューバー -->
+            <h3 class="spr_weapon">マニューバー</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="all-m" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-m" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="m-spr" class="btn btn-default" type="button" value="0" data-contents="スプラマニューバー/クイックボム/マルチミサイル">スプラマニューバー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="m-spr-c" class="btn btn-default" type="button" value="0" data-contents="スプラマニューバーコラボ/カーリングボム/ジェットパック">スプラマニューバーコラボ</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="m-dual" class="btn btn-default" type="button" value="0" data-contents="デュアルスイーパー/ポイントセンサー/マルチミサイル">デュアルスイーパー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="m-sputter" class="btn btn-default" type="button" value="0" data-contents="スパッタリー/ビーコン/キューバンボムピッチャー">スパッタリー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <!-- マニューバー END -->
+            <br />
+            <!-- ローラー -->
+            <h3 class="spr_weapon">ローラー</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="all-r" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-r" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="r-spr" class="btn btn-default" type="button" value="0" data-contents="スプラローラー/カーリングボム/スーパーチャクチ">スプラローラー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="r-spr-c" class="btn btn-default" type="button" value="0" data-contents="スプラローラーコラボ/ビーコン/イカスフィア">スプラローラーコラボ</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="r-dinamo" class="btn btn-default" type="button" value="0" data-contents="ダイナモローラー/トラップ/ハイパープレッサー">ダイナモローラー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="r-carbon" class="btn btn-default" type="button" value="0" data-contents="カーボンローラー/ロボットボム/アメフラシ">カーボンローラー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="r-variable" class="btn btn-default" type="button" value="0" data-contents="ヴァリアブルローラー/シールド/スプラッシュボムピッチャー">ヴァリアブルローラー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <!-- ローラー END -->
+            <br />
+            <!-- フデ-->
+            <h3 class="spr_weapon">フデ</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="all-h" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-h" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="h-pbr" class="btn btn-default" type="button" value="0" data-contents="パブロ/スプラッシュボム/スーパーチャクチ">パブロ</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="h-hksi" class="btn btn-default" type="button" value="0" data-contents="ホクサイ/ロボットボム/ジェットパック">ホクサイ</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <!-- フデ END -->
+            <br />
+            <!-- チャージャー -->
+            <h3 class="spr_weapon">チャージャー</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="all-c" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-c" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="c-spr" class="btn btn-default" type="button" value="0" data-contents="スプラチャージャー/スプラッシュボム/ハイパープレッサー">スプラチャージャー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="c-spr-c" class="btn btn-default" type="button" value="0" data-contents="スプラチャージャーコラボ/シールド/キューバンボムピッチャー">スプラチャージャーコラボ</button>
+                </div>
+        </div>
+        <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="c-spr-s" class="btn btn-default" type="button" value="0" data-contents="スプラスコープ/スプラッシュボム/ハイパープレッサー">スプラスコープ</button>
+                </div>
+                <div class="btn-group">
+                    <button id="c-spr-s-c" class="btn btn-default" type="button" value="0" data-contents="スプラスコープコラボ/シールド/キューバンボムピッチャー">スプラスコープコラボ</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="c-4k" class="btn btn-default" type="button" value="0" data-contents="リッター4K/トラップ/アメフラシ">リッター4K</button>
+                </div>
+                <div class="btn-group">
+                    <button id="c-4k-k" class="btn btn-default" type="button" value="0" data-contents="リッター4Kカスタム/ジャンプビーコン/バブルランチャー">リッター4Kカスタム</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="c-4k-s" class="btn btn-default" type="button" value="0" data-contents="4Kスコープ/トラップ/アメフラシ">4Kスコープ</button>
+                </div>
+                <div class="btn-group">
+                    <button id="c-4k-s-k" class="btn btn-default" type="button" value="0" data-contents="4Kスコープカスタム/ジャンプビーコン/バブルランチャー">4Kスコープカスタム</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="c-quick-a" class="btn btn-default" type="button" value="0" data-contents="スクイックリンα/ポイントセンサー/インクアーマー">スクイックリンα</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="c-14-k" class="btn btn-default" type="button" value="0" data-contents="14式竹筒銃・甲/カーリングボム/マルチミサイル">14式竹筒銃・甲</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="c-soi" class="btn btn-default" type="button" value="0" data-contents="ソイチューバー/キューバンボム/スーパーチャクチ">ソイチューバー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <!-- チャージャー END -->
+            <br />
+            <!-- スロッシャー -->
+            <h3 class="spr_weapon">スロッシャー</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="all-t" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-t" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="t-backet" class="btn btn-default" type="button" value="0" data-contents="バケットスロッシャー/キューバンボム/マルチミサイル">バケットスロッシャー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="t-screw" class="btn btn-default" type="button" value="0" data-contents="スクリュースロッシャー/ロボットボム/ハイパープレッサー">スクリュースロッシャー</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="t-hissen" class="btn btn-default" type="button" value="0" data-contents="ヒッセン/クイックボム/インクアーマー">ヒッセン</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <!-- スロッシャー END -->
+            <br />
+            <!-- スピナー -->
+            <h3 class="spr_weapon">スピナー</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="all-sp" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-sp" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="sp-barrel" class="btn btn-default" type="button" value="0" data-contents="バレルスピナー/スプリンクラー/ハイパープレッサー">バレルスピナー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="sp-barrel-d" class="btn btn-default" type="button" value="0" data-contents="バレルスピナーデコ/スプラッシュシールド/バブルランチャー">バレルスピナーデコ</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="sp-spr" class="btn btn-default" type="button" value="0" data-contents="スプラスピナー/クイックボム/マルチミサイル">スプラスピナー</button>
+                </div>
+                <div class="btn-group">
+                    <button id="" class="btn btn-default" type="button" value="-1" data-contents="">　</button>
+                </div>
+            </div>
+            <!-- スピナー END -->
+            <br />
+            <!-- シェルター -->
+            <h3 class="spr_weapon">シェルター</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="all-sh" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-sh" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="sh-para" class="btn btn-default" type="button" value="0" data-contents="パラシェルター/スプリンクラー/アメフラシ">パラシェルター</button>
+                </div>
+                <div class="btn-group">
+                    <button id="sh-camp" class="btn btn-default" type="button" value="0" data-contents="キャンピングシェルター/ジャンプビーコン/バブルランチャー">キャンピングシェルター</button>
+                </div>
+            </div>
+            <!-- シェルター END -->
+            <br />
+            <!-- Amibo -->
+            <!-- h3 class="spr_weapon">[Amibo]</h3>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="all-amibo" class="btn btn-success" type="button">全選択</button>
+                </div>
+                <div class="btn-group">
+                    <button id="declear-amibo" class="btn btn-default" type="button">全解除</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="amibo-hero-s" class="btn btn-default" type="button" value="0" data-contents="ヒーローシューター レプリカ/クイックボム/ボムラッシュ">ヒーローシューター R</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="amibo-hero-r" class="btn btn-default" type="button" value="0" data-contents="ヒーローローラー レプリカ/キューバンボム/メガホンレーザー">ヒーローローラー R</button>
+                </div>
+            </div>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="amibo-hero-c" class="btn btn-default" type="button" value="0" data-contents="ヒーローチャージャー レプリカ/スプラッシュボム/ボムラッシュ">ヒーローチャージャー R</button>
+                </div>
+            </div -->
+            <!-- Amibo END -->
+        </div>
+        <div class="col-md-6 col-md-offset-3 margin_bottom20">
+            <div class="spr_select_button">
+                <button id="select" class="btn btn-warning" type="button">選択</button>
+            </div>
+        </div>
+        <!----- 選択武器情報 ----->
+        <div id="selected_weapon_information" class="col-md-12 spr_weapon_information_hide">
+            <table class="table table-bordered spr_table_center_middle">
+                <thead>
+                    <tr>
+                        <th class="selected_main_weapon">メイン</th>
+                        <th class="selected_sub_weapon">サブ</th>
+                        <th class="selected_special_weapon">スペシャル</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="selected_main_weapon" style="border-bottom: 1px solid #ddd !important;" nowrap="nowrap">?</td>
+                        <td id="selected_sub_weapon" style="border-bottom: 1px solid #ddd !important;" nowrap="nowrap">?</td>
+                        <td id="selected_special_weapon" style="border-bottom: 1px solid #ddd !important;" nowrap="nowrap">?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!----- 選択武器情報 END ----->
+        <div class="col-md-8 col-md-offset-2 margin_bottom20">
+            <table style="width: 100%;">
+                <tbody>
+                    <tr style="text-align: center;">
+                        <td style="padding-right: 5px;"><button id="save" class="btn btn-primary" type="button">選択したウェポンを保存する</button></td>
+                        <td style="padding-left: 5px;"><button id="load" class="btn btn-info" type="button">保存したウェポンを読み込む</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!---------------------   END  ----------------------->
+    <!------------------ Javaスクリプ子 ------------------->
+
+<script type="text/javascript">
+$( function() {
+// デザイン関連
+// モバイルとタブレットとPCとで文字サイズ変更
+  var agent = navigator.userAgent;
+  if(agent.search(/iPhone/) != -1 || agent.search(/iPod/) != -1 || agent.search(/Android/) != -1){
+    $('.btn').css("font-size", "8px");
+    $('#selected_weapon_information').css("font-size", "8px");
+  }
+});
+// ボタン選択状態設定
+$('.btn').click (function () {
+    var val = $(this).val();
+    var id  = $(this).attr('id');
+    if ((id == "select") || id.match(/all-/) || id.match(/declear-/) || (val == -1) || (id == "save") || (id == "load")) {
+        return false;
+    } else if (val == 1) {
+      $(this).val(0);
+      $(this).removeClass("btn-success");
+      $(this).addClass("btn-default");
+    } else {
+      $(this).val(1);
+      $(this).removeClass("btn-default");
+      $(this).addClass("btn-success");
+    }
+});
+// 選定武器表示
+$('#select').click (function () {
+  var label = "";
+  var selectedWeapons = $('button[value=1]').map(function() {
+    return $(this).attr('data-contents');
+  });
+  if (selectedWeapons.length == 0) {
+    $('#selected_weapon_information').slideUp();
+    $('#select').text("1つ以上選択してください");
+    label = "未選択";
+  }
+  else if (selectedWeapons.length == 1) {
+    var weapons = selectedWeapons[0].split("/");
+    $('#selected_main_weapon').text(weapons[0]);
+    $('#selected_sub_weapon').text(weapons[1]);
+    $('#selected_special_weapon').text(weapons[2]);
+    $('#select').text("選択");
+    $('#selected_weapon_information').slideDown();
+    label = weapons[0];
+  } 
+  else {
+    selectedWeapons = shuffle(selectedWeapons);
+    var datetime = +new Date();
+    var weapons = selectedWeapons[(datetime%selectedWeapons.length)].split("/");
+    $('#selected_main_weapon').text(weapons[0]);
+    $('#selected_sub_weapon').text(weapons[1]);
+    $('#selected_special_weapon').text(weapons[2]);
+    $('#select').text("選択");
+    $('#selected_weapon_information').slideDown();
+    label = weapons[0];
+  }
+  ga("create", "UA-68669694-1");
+  ga('send', 'event', 'スプラトゥーン', '武器選択', label, 1, {'nonInteraction': 1});
+});
+// 混ぜるぜぇ～超混ぜるぜぇ～
+function shuffle(array) {
+  var n = array.length, t, i;
+  while (n) {
+    i = Math.floor(Math.random() * n--);
+    t = array[n];
+    array[n] = array[i];
+    array[i] = t;
+  }
+  return array;
+}
+// 全選択・解除
+// シューター
+$('#all-s').click (function () {
+  $('[id^=s-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-s').click (function () {
+  $('[id^=s-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// ブラスター
+$('#all-b').click (function () {
+  $('[id^=b-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-b').click (function () {
+  $('[id^=b-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// マニューバー
+$('#all-m').click (function () {
+  $('[id^=m-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-m').click (function () {
+  $('[id^=m-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// ローラー
+$('#all-r').click (function () {
+  $('[id^=r-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-r').click (function () {
+  $('[id^=r-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// フデ
+$('#all-h').click (function () {
+  $('[id^=h-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-h').click (function () {
+  $('[id^=h-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// チャージャー
+$('#all-c').click (function () {
+  $('[id^=c-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-c').click (function () {
+  $('[id^=c-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// スロッシャー
+$('#all-t').click (function () {
+  $('[id^=t-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-t').click (function () {
+  $('[id^=t-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// スピナー
+$('#all-sp').click (function () {
+  $('[id^=sp-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-sp').click (function () {
+  $('[id^=sp-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// シェルター
+$('#all-sh').click (function () {
+  $('[id^=sh-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-sh').click (function () {
+  $('[id^=sh-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// Amibo
+$('#all-amibo').click (function () {
+  $('[id^=amibo-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-amibo').click (function () {
+  $('[id^=amibo-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+// その他
+$('#all-o').click (function () {
+  $('[id^=o-]').map(function() {
+    $(this).val(1);
+    $(this).removeClass("btn-default");
+    $(this).addClass("btn-success");
+  });
+});
+$('#declear-o').click (function () {
+  $('[id^=o-]').map(function() {
+    $(this).val(0);
+    $(this).removeClass("btn-success");
+    $(this).addClass("btn-default");
+  });
+});
+
+// 説明表示
+// はじめに
+$('#first-title').click (function () {
+  var status = $('#first-contents').css("display");
+  if (status == "none") {
+      $('#first-contents').slideDown();
+      $('#first-icon').removeClass("glyphicon-triangle-bottom");
+      $('#first-icon').addClass("glyphicon-triangle-top");
+  } else {
+      $('#first-contents').slideUp();
+      $('#first-icon').removeClass("glyphicon-triangle-top");
+      $('#first-icon').addClass("glyphicon-triangle-bottom");
+  }
+});
+// 使い方
+$('#howto-title').click (function () {
+  var status = $('#howto-contents').css("display");
+  if (status == "none") {
+      $('#howto-contents').slideDown();
+      $('#howto-icon').removeClass("glyphicon-triangle-bottom");
+      $('#howto-icon').addClass("glyphicon-triangle-top");
+  } else {
+      $('#howto-contents').slideUp();
+      $('#howto-icon').removeClass("glyphicon-triangle-top");
+      $('#howto-icon').addClass("glyphicon-triangle-bottom");
+  }
+});
+// ウェポンセットの保存・読み込み方法
+$('#set-title').click (function () {
+  var status = $('#set-contents').css("display");
+  if (status == "none") {
+      $('#set-contents').slideDown();
+      $('#set-icon').removeClass("glyphicon-triangle-bottom");
+      $('#set-icon').addClass("glyphicon-triangle-top");
+  } else {
+      $('#set-contents').slideUp();
+      $('#set-icon').removeClass("glyphicon-triangle-top");
+      $('#set-icon').addClass("glyphicon-triangle-bottom");
+  }
+});
+// 注意事項
+$('#note-title').click (function () {
+  var status = $('#note-contents').css("display");
+  if (status == "none") {
+      $('#note-contents').slideDown();
+      $('#note-icon').removeClass("glyphicon-triangle-bottom");
+      $('#note-icon').addClass("glyphicon-triangle-top");
+  } else {
+      $('#note-contents').slideUp();
+      $('#note-icon').removeClass("glyphicon-triangle-top");
+      $('#note-icon').addClass("glyphicon-triangle-bottom");
+  }
+});
+// 更新履歴
+$('#history-title').click (function () {
+  var status = $('#history-contents').css("display");
+  if (status == "none") {
+      $('#history-contents').slideDown();
+      $('#history-icon').removeClass("glyphicon-triangle-bottom");
+      $('#history-icon').addClass("glyphicon-triangle-top");
+  } else {
+      $('#history-contents').slideUp();
+      $('#history-icon').removeClass("glyphicon-triangle-top");
+      $('#history-icon').addClass("glyphicon-triangle-bottom");
+  }
+});
+// アップデート予定
+$('#update-title').click (function () {
+  var status = $('#update-contents').css("display");
+  if (status == "none") {
+      $('#update-contents').slideDown();
+      $('#update-icon').removeClass("glyphicon-triangle-bottom");
+      $('#update-icon').addClass("glyphicon-triangle-top");
+  } else {
+      $('#update-contents').slideUp();
+      $('#update-icon').removeClass("glyphicon-triangle-top");
+      $('#update-icon').addClass("glyphicon-triangle-bottom");
+  }
+});
+
+// 保存機能
+$('#save').click (function () {
+  var selectedWeapons = $('button[value=1]').map(function() {
+    return $(this).attr('id');
+  });
+  if (selectedWeapons.length == 0) {
+    alert("ウェポンを1つ以上選択してください。");
+    return;
+  }
+  var selecetdWeaponsStr = selectedWeapons.get().join();
+  $.cookie("WhbWeaponRandomSelector2", selecetdWeaponsStr);
+  ga("create", "UA-68669694-1");
+  ga('send', 'event', 'スプラトゥーン2', '武器選択', 'セーブ', 1, {'nonInteraction': 1});
+  alert("選択したウェポンを保存しました。");
+});
+// 参照機能
+$('#load').click (function () {
+  var savedWeaponsStr = $.cookie("WhbWeaponRandomSelector2");
+  if(savedWeaponsStr === undefined) {
+    alert("ウェポンセットが保存されていません。");
+    return;
+  }
+  var savedWeapons = savedWeaponsStr.split(",");
+  
+  $('[id^=declear]').click();
+  
+  jQuery.each(savedWeapons, function() {
+    if($("#"+this).length){
+      $("#"+this).val(1);
+      $("#"+this).removeClass("btn-default");
+      $("#"+this).addClass("btn-success");
+    }
+  });
+  
+  ga("create", "UA-68669694-1");
+  ga('send', 'event', 'スプラトゥーン2', '武器選択', 'ロード', 1, {'nonInteraction': 1});
+  alert("ウェポンセットを読み込みました。");
+  
+});
+</script>
+<!---------------------   END  ----------------------->
+</body>
+</html>
