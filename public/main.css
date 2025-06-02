@@ -96,3 +96,15 @@
   .selected_special_weapon {
     width: 30% !important;
   }
+
+/* Styles for btn-group-justified */
+.btn-group-justified {
+    display: flex;
+    width: 100%;
+}
+.btn-group-justified .btn-group {
+    flex: 1 1 auto;
+}
+.btn-group-justified .btn-group .btn {
+    width: 100%;
+}
